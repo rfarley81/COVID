@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Alexandria Library - COVID-19 Symptom Checker</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<h1>Alexandria Library - COVID-19 Symptom Checker</h1>
+<p>This app is intended as a symptom checker for Alexandria Library employees. It is not intended to provide you with a diagnosis.</br>
+<br><b>Please consult a doctor if you are concerned about your symptoms.</b></br>
+<p><b>Seek emergency medical care immediately if you have:</b></p><ul>
+<li>Trouble Breathing</li>
+<li>Persistent Pain or Pressure in the Chest</li>
+<li>New Confusion</li>
+<li>Inability to Wake or Stay Awake</li>
+<li>Bluish Lips or Face</li></ul>
+<p>This is not a list of all the symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.</p>
+
+<form id = "SymptomChecker" name = "SymptomChecker">
+<p class = "questions"><b>Do you have a fever at or above 100.4 degrees Fahrenheit?</b></p>
+<input type = "radio" id = "mc" name = "question1" value = "yes"> Yes, I have a temperature at or above 100.4<br>
+<input type = "radio" id = "mc" name = "question1" value = "no"> No, My temperature is below 100.4<br>
+
+<p class = "questions"><b>Do you have a cough?</b></p>
+<input type = "radio" id = "mc" name = "question2" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question2" value = "no"> No<br>
+
+<p class = "questions"><b>Do you have shortness of breath or difficulty breathing?</b></p>
+<input type = "radio" id = "mc" name = "question3" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question3" value = "no"> No<br>
+
+<p class = "questions"><b>Do you have repeated shaking with chills?</b></p>
+<input type = "radio" id = "mc" name = "question4" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question4" value = "no"> No<br>
+
+<p class = "questions"><b>Do you have muscle pain?</b></p>
+<input type = "radio" id = "mc" name = "question5" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question5" value = "no"> No<br>
+
+<p class = "questions"><b>Do you have a headache?</b></p>
+<input type = "radio" id = "mc" name = "question6" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question6" value = "no"> No<br>
+
+<p class = "questions"><b>Do you have a sore throat?</b></p>
+<input type = "radio" id = "mc" name = "question7" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question7" value = "no"> No<br>
+
+<p class = "questions"><b>Do you have loss of taste and/or smell?</b></p>
+<input type = "radio" id = "mc" name = "question8" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question8" value = "no"> No<br>
+
+<p class = "questions"><b>Do you have diarrhea?</b></p>
+<input type = "radio" id = "mc" name = "question9" value = "yes"> Yes<br>
+<input type = "radio" id = "mc" name = "question9" value = "no"> No<br>
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+
+</div>
+</html>
+
+</body>
